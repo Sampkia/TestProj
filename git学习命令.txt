@@ -1,0 +1,32 @@
+Git通过检测用户名和邮箱来跟踪进行commit的用户
+:q 退出
+git config --global user.name "Firstname Lastname"
+git config --global user.email "your_email@youremail.com"
+
+mkdir 创建文件夹
+cd 目录
+git init 本地初始化
+touch 创建文件
+
+git log
+git reset --hard commit_id(commit字符)
+git init //把这个目录变成Git可以管理的仓库
+
+git add README.md //文件添加到仓库
+
+git add . //不但可以跟单一文件，还可以跟通配符，更可以跟目录。一个点就把当前目录下所有未追踪的文件全部add了 
+
+git commit -m "first commit" //把文件提交到仓库
+git remote add origin git@github.com:wangjiax9/practice.git //关联远程仓库
+git push -u origin master //把本地库的所有内容推送到远程库上	
+
+
+echo "# TestProj" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/Sampkia/TestProj.git
+git push -u origin master
+ 
+ 
+git remote remove origin
